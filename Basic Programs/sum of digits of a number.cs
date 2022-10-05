@@ -17,3 +17,34 @@ class Program
        
     }
 }
+
+// using Recursion
+using System;
+
+class Program
+{
+     public static void Main()
+{
+    int num, result;
+    Recursion rc = new Recursion();
+    Console.Write("Enter the Number : ");
+    num=int.Parse(Console.ReadLine());
+    result =rc.sum(num);
+    Console.WriteLine("Sum of Digits of {0} is {1}", num, result);
+    Console.Read();
+}
+}
+class Recursion
+{
+    public int sum(int num)
+    {
+        if (num != 0)
+        {
+            return (num % 10 + sum(num / 10));
+        }
+        else
+        {
+            return 0;
+        }
+    }
+}
