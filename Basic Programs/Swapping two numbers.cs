@@ -19,5 +19,13 @@ class Program
         string footer = new String('-',45);
         Console.WriteLine(footer);
         Console.WriteLine("After Swaping fist number: {0}, second number: {1}",num1,num2);
+        
+        // Method 2 using + and -
+         int  a=5, b=10;            
+       Console.WriteLine("Before swap a= "+a+" b= "+b);    
+       a=a+b; //a=15 (5+10)      
+       b=a-b; //b=5 (15-10)      
+       a=a-b; //a=10 (15-5)   
+       Console.Write("After swap a= "+a+" b= "+b)
     }
 }
