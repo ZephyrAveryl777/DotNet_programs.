@@ -20,7 +20,7 @@ namespace factorial
             {
                 fact = fact * i;
             }
-            Console.WriteLine("\nFactorial of Given Number is: "+fact);
+            Console.WriteLine("Factorial of Given Number is: "+fact);
             Console.ReadLine();
  
         }
